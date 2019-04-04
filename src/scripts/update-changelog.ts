@@ -15,7 +15,7 @@ try {
     fileLines.forEach((line) => {
       temp.write(`${line}\n`)
       if (line.includes('## [Unreleased]')) {
-        const release = `\n## [${version}] - ${moment().format('YYYY-MM-DD')}`
+        const release = `\n## [${version}] - ${moment().format('YYYY-MM-DD')}\n`
         temp.write(release)
       }
     })

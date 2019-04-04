@@ -13,7 +13,7 @@ try {
         fileLines.forEach(function (line) {
             temp_1.write(line + "\n");
             if (line.includes('## [Unreleased]')) {
-                var release = "\n## [" + version + "] - " + moment().format('YYYY-MM-DD');
+                var release = "\n## [" + version + "] - " + moment().format('YYYY-MM-DD') + "\n";
                 temp_1.write(release);
             }
         });
