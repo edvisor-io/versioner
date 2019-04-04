@@ -5,7 +5,9 @@
  "main": "index.js",
  "scripts": {
   "test": "ava",
-  "test-watch": "npx ava --watch"
+  "test-watch": "npx ava --watch",
+  "update-changelog": "bin/update-changelog.js",
+  "determine-version": "bin/versioner.js"
  },
  "author": "",
  "license": "ISC",
