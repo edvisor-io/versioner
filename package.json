@@ -1,0 +1,39 @@
+{
+ "name": "@edvisor/versioner",
+ "version": "1.0.0",
+ "description": "Tool to determine the version of an Edvisor release",
+ "main": "index.js",
+ "scripts": {
+  "test": "ava",
+  "test-watch": "npx ava --watch"
+ },
+ "author": "",
+ "license": "ISC",
+ "bin": {
+  "determine-version": "bin/versioner.js",
+  "update-changelog": "bin/update-changelog.js"
+ },
+ "dependencies": {
+  "moment": "^2.24.0"
+ },
+ "devDependencies": {
+  "@types/node": "^11.13.0",
+  "ava": "^1.4.1",
+  "gulp": "^4.0.0",
+  "gulp-typescript": "^5.0.1",
+  "ts-node": "^8.0.3",
+  "typescript": "^3.4.1"
+ },
+ "ava": {
+  "files": [
+   "src/tests/*.ts"
+  ],
+  "compileEnhancements": false,
+  "extensions": [
+   "ts"
+  ],
+  "require": [
+   "ts-node/register"
+  ]
+ }
+}
